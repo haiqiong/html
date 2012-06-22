@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Temperature</title>
+		<meta charset="utf-8">
+		<script>
+			function showTemps() {
+				var tempByHour = [59.2, 60.1, 63, 65, 72];
+				//var tempByHour = new Array();
+				//tempByHour[0] = 59.2;
+				//tempByHour[1] = 60.1;
+				//tempByHour[2] = 63;
+				//tempByHour[3] = 65;
+				//tempByHour[4] = 62;
+				for (var i = 0; i < tempByHour.length; i++) {
+					var curTemp = tempByHour[i];
+					var id = "temp" + i;
+					var li = document.getElementById(id);
+					if (i == 0) {
+						li.innerHTML = "The temperature at noon was " + curTemp;
+					} else {
+						li.innerHTML = "The temperature at " + i + " was " + curTemp;
+					}
+				}
+			}
+			window.onload = showTemps;
+		</script>
+	</head>
+	<body>
+		<h1>Temperatures</h1>
+		<ul>
+			<li id="temp0"></li>
+			<li id="temp1"></li>
+			<li id="temp2"></li>
+			<li id="temp3"></li>
+			<li id="temp4"></li>
+		</ul>
+	</body>
+</html>
