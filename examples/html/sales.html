@@ -1,0 +1,56 @@
+<!--
+1. retrieve the meta info of document and p. 
+	 change the style of p.
+2. get and show the content of a txt file. The txt file is stored in the same 
+ 	 folder of html.
+3. get JSON data from file store in the html folder.
+4. cross-domain issue when retrieving JSON data from another web server with XHR.
+5. use JSONP to avoid cross-domain issue.
+	 JSONP <script> in HTML. 
+6. update the display at some regular interval.
+   JSONP <script> in a handler. insert and replace <script> in HTML at some regular 	interval.
+	 avoid browser cache by adding a random number onto the end of the URL.
+	 remove duplicate data from continuous retrieving.
+
+-->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Mighty Gumball</title>
+		<meta charset="utf-8">
+		<!--<script src="https://getfirebug.com/firebug-lite.js"></script>-->
+		<script src="../js/gumballSale.js"></script>
+
+		<!--
+		<script>
+			function animalSays(animal) {
+				alert(animal.type + " says " + animal.sound);
+			}
+		</script>
+		
+		<script src="http://wickedlysmart.com/hfhtml5/chapter6/dog3.js"></script>
+		-->
+
+		<link rel="stylesheet" href="../css/mightygumball.css">
+	</head>
+	<body>
+		<h1>Mighty Gumball Sales</h1>
+		<p id="firstp"> the first paragraph </p>
+		<p id="secondp"> the second paragraph </p>
+
+		<div id="parameta"></div>
+
+		<div id="sales">show sales
+		</div>
+			
+		<div id="luck">Are you lucky today?
+			<button id="check">Luck?</button>
+		</div>
+
+		<!--the web service that provide JSON data.put in the bottom of body.	
+		<script src="http://gumball.wickedlysmart.com/?callback=updateSales"></script>
+		-->
+	</body>
+</html>
+

@@ -25,6 +25,7 @@ function displayLocation(position) {
 
 		var div = document.getElementById("location");
 		div.innerHTML = "You are at Latitude: " + latitude + ", Longitude: " + longitude;
+		div.innerHTML += " (with " + position.coords.accuracy + " meters accuracy)";
 
 		var km = computeDistance(position.coords, wickCoords);
 		var distance = document.getElementById("distance");
@@ -84,12 +85,11 @@ function showMap(coords) {
 		//assign the new Map object to the global var map.
 		map = new google.maps.Map(mapDiv, mapOptions);
 
-		//var title = "haiqiong location";
-		//var content = "I am here: " + coords.latitude + ", " + coords.longitude;
-		//addMarker(map, googleLatAndLong, title, content);
+		var title = "haiqiong location";
+		var content = "I am here: " + coords.latitude + ", " + coords.longitude;
+		addMarker(map, googleLatAndLong, title, content);
 }
 
-/*
 function addMarker(map, latlong, title, content) {
 		var markerOptions = {
 				position: latlong,
@@ -109,4 +109,3 @@ function addMarker(map, latlong, title, content) {
 				infoWindow.open(map);
 		});
 }
-*/
