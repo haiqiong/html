@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Person Info Collect</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header id="header>
+			<form method="get" action="http://www/google.com/search">
+				<input type="text" name="q" size="15" maxlength="255" value="" placeholder="Search" />
+				<input type="submit" value="search" />
+			</form>
+		<section>
+			<h1>Input person information:</h1>
+			<form>
+				<label>First name</label>
+				<input name="firstName" type="text" autofocus required><br>
+				<label>Last name</label>
+				<input name="lastName" type="text" required><br>
+				<label>Date of birth</label>
+				<input name="dob" type="date" required><br>
+				<label>age</label>
+				<input name="age" type="number" min="18" max="100"><br>
+				<label>when would join us?</label>
+				<input name="joindate" type="date"><br>
+				<label>Email address</label>
+				<input name="emailAddr" type="email"><br>
+				<label>Website</label>
+				<input name="website" type="URL" placeholder="Enter your own web site"><br>
+				<label>how many hours you surf each week?</label>
+				<input id="slider" name="surftime" type="range" min="1" max="20" value="5">
+				<output name="result" onforminput="value=slider.value">5</output><br>
+				<button type="submit">Submit</button><br>
+				<label>select a color</label>
+				<input list="colorList" type="text>
+				<datalist id="colorList">
+					<option label="red" value="red">
+					<option label="gree" value="green">
+					<option label="blue" value="blue">
+				</datalist>
+			</form>
+			<aside id="aside">For additional information, please contact haiqiong.</aside>
+			</section><br><br><br>
+
+			<section id="navigation">
+			<p><time>July 21, 2012</time></p>
+		<navigation id="navigationLink">
+			<a href="./person-info.html">Home</a> | 
+			<a href="./products.html">Products</a> |
+			<a href="./news.html">News</a> |
+			<a href="./contactUs.html">Contact us</a>
+			</navigation>
+		</section><br>
+		<footer id="footer">
+			<p>Copyright @ 2012 Haiqiong</p>
+		</footer>
+	</body>
+</html>

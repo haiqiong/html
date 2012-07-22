@@ -28,3 +28,4 @@ function getStoreArray(key) {
 				playlistArray = JSON.parse(playlistArray);
 		}
 		return playlistArray;
+}

@@ -15,4 +15,10 @@ HTML 5 examples by Haiqiong Yao, 6/24/2012
 5. tweet_shirt.html, tshirtCanvas.js
 		draw rectangle, circle, triangle etc. on the canvas.
 		retieve tweets from the twitter by JSONP, draw the tweet picked by the user on the canvas.
+6. webstorage.html, maintenance.html, notetoself.js
+	  save stickies typed by the user to local storage and show in the page.
+		maintenance to clear the local storage in a domain.
+    add sticky to localstorage array.
+		delete sticky by clicking it in the page.
+		sticky object contains text and color. Clean storage before testing.
 
