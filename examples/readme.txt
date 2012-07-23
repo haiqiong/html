@@ -21,4 +21,8 @@ HTML 5 examples by Haiqiong Yao, 6/24/2012
     add sticky to localstorage array.
 		delete sticky by clicking it in the page.
 		sticky object contains text and color. Clean storage before testing.
+7. Mandelbrot set.
+    fractal.html, mandellib.js(given for low-level computation of the Mandelbrot graphics), mandel.js
+	  create 8 web worker to draw the rows of the image.
+		zoom in the image(bug!)
 
